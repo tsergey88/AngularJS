@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ANGULARJS</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.js"></script>
+  <script src="./app.js"></script>
+</head>
+<body ng-app="myApp">
+  <div ng-controller="parentCtrl as parentCtrl">
+    <button ng-click="parentCtrl.showAlert()">Show Alert</button>
+    <button ng-click="parentCtrl.showPrompt()">Show Prompt</button>
+    <button ng-click="parentCtrl.showConfirm()">Show Confirm</button>
+  </div>  
+</body>
+</html>
