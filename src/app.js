@@ -11,9 +11,8 @@ angular
   .directive('myButton', function() {
     return {
       restrict: 'EA',
-      scope: { title: "@", },
-      replace: true,
-      template: '<button>{{title}}</button>',
+      transclude: true,
+      template: ['<button ng-transclude></button>'].join(''),
     }
   });
 
