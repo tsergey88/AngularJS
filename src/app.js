@@ -13,7 +13,7 @@ angular
       restrict: 'EA',
       scope: { title: "@", },
       replace: true,
-      template: [ '<button>{{title}}</button>'].join(''),
+      template: '<button>{{title}}</button>',
     }
   });
 
