@@ -10,10 +10,16 @@
   <script src="./app.js"></script>
 </head>
 <body ng-app="myApp">
-  <div ng-controller="parentCtrl as parentCtrl">
-    <button ng-click="parentCtrl.showAlert()">Show Alert</button>
-    <button ng-click="parentCtrl.showPrompt()">Show Prompt</button>
-    <button ng-click="parentCtrl.showConfirm()">Show Confirm</button>
-  </div>  
+  <div ng-controller="parentCtrl as parent">
+    <button ng-click="parent.showAlert()">Show Alert</button>
+    <button ng-click="parent.showPrompt()">Show Prompt</button>
+    <button ng-click="parent.showConfirm()">Show Confirm</button>
+  </div>
+  <hr />
+  <container>
+    <my-button ng-click="container.showAlert()" title="Show Alert"></my-button>
+    <my-button ng-click="container.showPrompt()" title="Show Prompt"></my-button>
+    <my-button ng-click="container.showConfirm()" title="Show Confirm"></my-button>
+  </container>
 </body>
 </html>
