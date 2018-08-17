@@ -11,13 +11,9 @@ angular
   .directive('myButton', function() {
     return {
       restrict: 'EA',
-      scope: {
-        title: "@",
-      },
+      scope: { title: "@", },
       replace: true,
-      template: [
-        '<button>{{title}}</button>'
-      ].join(''),
+      template: [ '<button>{{title}}</button>'].join(''),
     }
   });
 
